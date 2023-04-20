@@ -1,1 +1,0 @@
-# ashshelby.github.io
