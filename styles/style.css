@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;900&display=swap');
 
+
 nav{
     width: 80%;
     margin: 0 auto;
@@ -18,7 +19,7 @@ nav{
 
 .tempt-background-image img{
     min-width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     top:0;
     z-index: -5;
@@ -28,7 +29,7 @@ nav{
 }
 .cover-illust{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     top:0;
     left:0;
@@ -60,4 +61,15 @@ nav{
 }
 .description-hero{
     font-weight: 400;
+}
+.hero-section{
+    height: 90vh;
+
+}
+.code-class{
+    background: black;
+}
+.about-me{
+    width: 100%;
+    background-color: black;
 }
