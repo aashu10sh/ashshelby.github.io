@@ -1,5 +1,7 @@
 package aashutosh
 
+import "fmt"
+
 type AashutoshPudasaini struct {
 	name                string
 	dayOfBirthTimestamp int64
@@ -34,4 +36,8 @@ func (a *AashutoshPudasaini) Education() []map[string]string {
 
 func (a *AashutoshPudasaini) Skills() []string {
 	return []string{"HTML/CSS/JS", "SvelteKit - Learning", "Node.js", "Vite", "npm/yarn/pnpm", "Docker/k8s - Learning", "PWA", "SSR", "SPA", "GIT/CVS", "Web Sockets", "Firebase", "PHP", "MySQL/MongoDB/ORM", "Photoshop", "TypeScript", "NextJS", "Core Python", "Flask", "Django", "Laravel", "Golang", "MUX", "FastAPI", "Express.js", "C/C++", "Arduino", "ESP"}
+	fmt.Println("Hello world %s ", "asd/asdas")
+
 }
+
+// fmt.Println("I do %s ",backend/ethical-hacking/dev-ops/hardware);

@@ -85,3 +85,29 @@ nav{
 .code-class{
     overflow-x: hidden;
 }
+.form-container{
+    background-color: black;
+    color:white;
+}
+.contact-text{
+    color: white;
+}
+.to-color{
+    width: 50% ;
+    margin: 0 auto;
+}
+
+input{
+    border: 1px solid #fff;
+    padding: 15px !important; 
+    color:white !important; 
+    border-radius: 12px;
+    background: none;
+    margin-bottom: 12px !important; 
+
+}
+
+label{
+    font-weight: 700;
+    margin-bottom: 5px !important; 
+}
