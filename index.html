@@ -10,6 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/script/prism.js"></script>
     <link rel="stylesheet" href="/styles/prism.css">
+    <link rel="stylesheet" href="/styles/timeline.css">
+
 <body>
     <nav>
         <div class="header">
@@ -32,9 +34,13 @@
         <div class="hero-container">
             <div class="hero-header">
                 <h2 class="text-6xl top-text">Hi, I am <span> Aashutosh</span>,</h2>
-                <h2 class="text-4xl mt-5">and I love playing with technology.</h2>
+                <h2 class="text-4xl mt-5 top-text">and I love playing with technology.</h2>
 
-                <p class="mt-5">fmt.Println("I do %s ",backend/ethical-hacking/dev-ops/hardware);</p>
+                <p class="mt-8 text-2xl code"><span class="text-[#f7768e]">fmt</span>.<span
+                        class="text-[#bb9af7]">Println</span><span class="text-[#e0af68]">(</span>"I do <span
+                        class="text-[#9ece6a]">%s</span> "<span class="text-[#fffff]">,</span> <span
+                        class="text-[#9ece6a]">"backend/ethical-hacking/dev-ops/hardware"</span> <span
+                        class="text-[#e0af68]">)</span><span class="text-[#f7768e]">;</span></p>
                 <!-- last ma garne -->
                 <p class="mt-5 text-2xl description-hero">
                     I'm someone who loves to break down the latest technology and figure out how it works.<br> There's
@@ -44,62 +50,165 @@
             </div>
         </div>
     </section>
-    
+
     <section class="about-me">
         <!-- <h2>About Me</h2> -->
         <div class="hero-container">
-        <p>
+            <p>
             <pre>
                 <h2 class="hero-header"></h2>
-                <code class="language-go code-class">
-// About Me 
-package aashutosh
+                <code class="language-python code-class">         
+# About Me 
+from typing import List, Dict
 
-type AashutoshPudasaini struct {
-	name                string
-	dayOfBirthTimestamp int64
-	email               string
-}
+class AashutoshPudasaini:
+    def __init__(self):
+        self.name: str = "Aashutosh Pudasaini"
+        self.dayOfBirthTimestamp: int = 1086347591
+        self.email: str = "pudasainiashutosh@gmail.com"
 
-func GetAashutosh() *AashutoshPudasaini {
-	return &AashutoshPudasaini{
-		name:                "Aashutosh Pudasaini",
-		dayOfBirthTimestamp: 1086347591,
-		email:               "pudasainiashutosh@gmail.com",
-	}
-}
+    def work_experience(self) -> List[Dict[str, str]]:
+        return [
+            {"Jan 2023 - now": "Fellow at DWIT Software Club (softwareclub.deerwalk.edu.np)"},
+            {"Mar 2023 - May 2023": "Technical Volunteer at Deerhack"},
+            {"Feb 2023 - Mar 2023": "Data Entry Clerk at HamroPay"},
+            {"Jun 2022 - Aug 2023": "Laravel API Developer at skillhubltd.org"},
+            {"Jun 2022 - Oct 2022": "Backend Developer with Flask."},
+            {"May 2021 - Mar 2022": "President of DSS Coding Club"},
+        ]
 
-func (a *AashutoshPudasaini) WorkExperience() []map[string]string {
-	return []map[string]string{
-		{"Jan 2023 - now": "Fellow at DWIT Software Club (softwareclub.deerwalk.edu.np)"},
-		{"Mar 2023 - May 2023": "Technical Volunteer at Deerhack (deerhack.deerwalk.edu.np)"},
-		{"Feb 2023 - Mar 2023": "Data Entry Clerk at HamroPay"},
-		{"Jun 2022 - Aug 2023": "Laravel API Developer at skillhubltd.org"},
-		{"Jun 2022 - Oct 2022": "Backend Developer with Flask."},
-		{"May 2021 - Mar 2022": "President of DSS Coding Club"},
-	}
-}
+    def education(self) -> List[Dict[str, str]]:
+        return [
+            {"2023-now": "DWIT - Bachelors in Computer Science and  Information Technology"},
+            {"2020-2022": "DSS - Science High School Degree  Nepal Education Board (NEB)"},
+        ]
 
-func (a *AashutoshPudasaini) Education() []map[string]string {
-	return []map[string]string{
-		{"2023-now": "Deerwalk Institute of Technology - Bachelors in Computer Science and  Information Technology "},
-		{"2020-2022": "Deerwalk Sifal School - Science High School Degree  Nepal Education Board (NEB)"},
-	}
-}
-
-func (a *AashutoshPudasaini) Skills() []string {
-	return []string{"HTML/CSS/JS", "SvelteKit - Learning", "Node.js", "Vite", "npm/yarn/pnpm", "Docker/k8s - Learning", "PWA", 
-    "SSR", "SPA", "GIT/CVS", "Web Sockets", "Firebase", "PHP", "MySQL/MongoDB/ORM", "Photoshop", "TypeScript", "NextJS", 
-    "Core Python", "Flask", "Django", "Laravel", "Golang", "MUX", "FastAPI", "Express.js", "C/C++", "Arduino", "ESP"}
-}
+    def skills(self) -> List[str]:
+        return [
+            "HTML/CSS/JS", "SvelteKit - Learning", "Node.js", "Vite", "npm/yarn/pnpm",
+            "Docker/k8s - Learning", "PWA", "SSR", "SPA", "GIT/CVS", "Web Sockets",
+            "PHP", "MySQL/MongoDB/ORM", "Photoshop", "TypeScript", "NextJS", "Core Python",
+            "Flask", "Django", "Laravel", "Golang", "MUX", "FastAPI", "Express.js",
+            "C/C++", "Arduino", "ESP"
+        ]
                 </code>
             </pre>
-            
-        </p>
-    </div>
+            </p>
+        </div>
     </section>
+    <section class="experience-container">
+        <section class="cd-timeline js-cd-timeline">
+            <div class="container max-width-lg cd-timeline__container">
+                <div class="cd-timeline__block">
+                    <div class="cd-timeline__img cd-timeline__img--picture">
+                        <img src="assets/img/cd-icon-picture.svg" alt="Picture">
+                    </div> <!-- cd-timeline__img -->
 
-    <section>
+                    <div class="cd-timeline__content text-component">
+                        <h2>Title of section 1</h2>
+                        <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad
+                            debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+
+                        <div class="flex justify-between items-center">
+                            <span class="cd-timeline__date">Jan 14</span>
+                            <a href="#0" class="btn btn--subtle">Read more</a>
+                        </div>
+                    </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+
+                <div class="cd-timeline__block">
+                    <div class="cd-timeline__img cd-timeline__img--movie">
+                        <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+                    </div> <!-- cd-timeline__img -->
+
+                    <div class="cd-timeline__content text-component">
+                        <h2>Title of section 2</h2>
+                        <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad
+                            debitis unde?</p>
+
+                        <div class="flex justify-between items-center">
+                            <span class="cd-timeline__date">Jan 18</span>
+                            <a href="#0" class="btn btn--subtle">Read more</a>
+                        </div>
+                    </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+
+                <div class="cd-timeline__block">
+                    <div class="cd-timeline__img cd-timeline__img--picture">
+                        <img src="assets/img/cd-icon-picture.svg" alt="Picture">
+                    </div> <!-- cd-timeline__img -->
+
+                    <div class="cd-timeline__content text-component">
+                        <h2>Title of section 3</h2>
+                        <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error
+                            assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis.
+                            Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur
+                            temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed
+                            quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt
+                            similique aut adipisci.</p>
+
+                        <div class="flex justify-between items-center">
+                            <span class="cd-timeline__date">Jan 24</span>
+                            <a href="#0" class="btn btn--subtle">Read more</a>
+                        </div>
+                    </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+
+                <div class="cd-timeline__block">
+                    <div class="cd-timeline__img cd-timeline__img--location">
+                        <img src="assets/img/cd-icon-location.svg" alt="Location">
+                    </div> <!-- cd-timeline__img -->
+
+                    <div class="cd-timeline__content text-component">
+                        <h2>Title of section 4</h2>
+                        <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad
+                            debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+
+                        <div class="flex justify-between items-center">
+                            <span class="cd-timeline__date">Feb 14</span>
+                            <a href="#0" class="btn btn--subtle">Read more</a>
+                        </div>
+                    </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+
+                <div class="cd-timeline__block">
+                    <div class="cd-timeline__img cd-timeline__img--location">
+                        <img src="assets/img/cd-icon-location.svg" alt="Location">
+                    </div> <!-- cd-timeline__img -->
+
+                    <div class="cd-timeline__content text-component">
+                        <h2>Title of section 5</h2>
+                        <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Iusto, optio, dolorum provident rerum.</p>
+
+                        <div class="flex justify-between items-center">
+                            <span class="cd-timeline__date">Feb 18</span>
+                            <a href="#0" class="btn btn--subtle">Read more</a>
+                        </div>
+                    </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+
+                <div class="cd-timeline__block">
+                    <div class="cd-timeline__img cd-timeline__img--movie">
+                        <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+                    </div> <!-- cd-timeline__img -->
+
+                    <div class="cd-timeline__content text-component">
+                        <h2>Final Section</h2>
+                        <p class="color-contrast-medium">This is the content of the last section</p>
+
+                        <div class="flex justify-between items-center">
+                            <span class="cd-timeline__date">Feb 26</span>
+                        </div>
+                    </div> <!-- cd-timeline__content -->
+                </div> <!-- cd-timeline__block -->
+            </div>
+        </section> <!-- cd-timeline -->
+
         <!-- experience, cv bata chorne  -->
     </section>
 

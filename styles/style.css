@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&display=swap');
 
 
 nav{
@@ -52,10 +53,12 @@ nav{
     /* font-size: 30px; */
 }
 .top-text{
+    color: white !important;
     font-weight: bold;
     font-family: sans-serif,"JetBrains Mono",monospace;
 }
 .top-text span{
+    color:rgb(225, 94, 94);
     font-weight: 750;
     font-family: monospace;
 }
@@ -72,4 +75,13 @@ nav{
 .about-me{
     width: 100%;
     background-color: black;
+}
+
+.code{
+    font-weight: 900;
+    font-family: 'Fira Code',monospace;
+}
+
+.code-class{
+    overflow-x: hidden;
 }
