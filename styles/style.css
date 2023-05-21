@@ -12,9 +12,9 @@ nav {
   font-weight: bold;
   font-size: large;
 }
-body  {
-  cursor: url('https://fav.farm/🖕') 15 0, auto;
-}
+/* body  {
+  cursor: url('https://fav.farm/👆') 15 0, auto;
+} */
 .header {
   display: flex;
   place-content: space-between;

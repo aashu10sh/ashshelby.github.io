@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/styles/prism.css">
     <link rel="stylesheet" href="/styles/timeline.css">
     <script src="/script/validateForm.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <body>
     <nav>
         <div class="header">
@@ -144,22 +146,22 @@ class AashutoshPudasaini:
             
                 <div class="name-form m-7">
                     <label>Name</label><br>
-                    <input required name="name" placeholder="Samyam Shrestha">
+                    <input required name="name" placeholder="Samyam Shrestha" id="name">
                 </div>
                 <div class="email-form m-7">
                     <label>Email</label><br>
-                    <input placeholder="samyamshr07@gmail.com" name="email" required type="email">
+                    <input placeholder="samyamshr07@gmail.com" name="email" required type="email" id="email">
                 </div>
                 <div class="phone-num mt-7">
                     <label>Phone Number</label><br>
-                    <input placeholder="**********" name="phone-number" type="tel">
+                    <input placeholder="**********" name="phone-number" type="tel" id="phone-number">
                 </div>
 
                 <div class="msg mt-7">
                     <label > Message</label><br>
-                    <input placeholder="CSS is god." name="message">
+                    <input placeholder="CSS is god." name="message" id="message">
                 </div>
-                <button onclick="validateForm" class="px-4 py-2 text-white font-bold bg-[#47baef] hover:bg-[#47beaf] rounded-lg mt-5">SUBMIT</button>
+                <button id="on-click" class="px-4 py-2 text-white font-bold bg-[#47baef] hover:bg-[#47beaf] rounded-lg mt-5">SUBMIT</button>
             
         </div>
         <!-- contact form -->
