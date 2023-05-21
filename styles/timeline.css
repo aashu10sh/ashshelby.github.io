@@ -10,9 +10,9 @@
 
 .experience-section {
   width: 50%;
-  margin :5rem  auto;
+  margin: 5rem auto;
   /* background: grey; */
-  
+
   /* --color: rgba(30, 30, 30);
   --bgColor: rgba(245, 245, 245);
   min-height: 100vh;
@@ -23,7 +23,6 @@
   font-family: "Poppins", sans-serif;
   color: var(--color);
   background: grey;  */
-
 }
 
 h1 {
