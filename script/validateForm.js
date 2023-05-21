@@ -1,6 +1,7 @@
 
 function validateForm()  {
     
-    document.getElementById("")
+    console.log("Validating...");
+    
 
 }   

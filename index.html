@@ -12,7 +12,7 @@
     <script src="/script/prism.js"></script>
     <link rel="stylesheet" href="/styles/prism.css">
     <link rel="stylesheet" href="/styles/timeline.css">
-
+    <script src="/script/validateForm.js" defer></script>
 <body>
     <nav>
         <div class="header">
@@ -141,7 +141,7 @@ class AashutoshPudasaini:
             Contact Me
         </h1>
         <div class="form-div text-center mt-20">
-            <form method="POST" action="http://localhost:8081">
+            
                 <div class="name-form m-7">
                     <label>Name</label><br>
                     <input required name="name" placeholder="Samyam Shrestha">
@@ -159,8 +159,8 @@ class AashutoshPudasaini:
                     <label > Message</label><br>
                     <input placeholder="CSS is god." name="message">
                 </div>
-                <button type="submit" class="px-4 py-2 text-white font-bold bg-[#47baef] hover:bg-[#47beaf] rounded-lg mt-5">SUBMIT</button>
-            </form>
+                <button onclick="validateForm" class="px-4 py-2 text-white font-bold bg-[#47baef] hover:bg-[#47beaf] rounded-lg mt-5">SUBMIT</button>
+            
         </div>
         <!-- contact form -->
         </div>
